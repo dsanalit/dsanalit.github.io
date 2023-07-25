@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#hero {
+    background-image: url('background-image.jpg'); /* Add your hero background image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#about, #research, #publications, #contact {
+    padding: 2rem 0;
+}
+.profile-picture {
+    width: 100px; /* Adjust the width as needed */
+    height:120px; /* Adjust the height as needed */
+    border-radius: 20%; /* To make the image circular, assuming it's a portrait-style photo */
+    margin-right: 20px; /* To add some space between the image and header content */
+}
+
+.profile-picture {
+    width: 150px; /* Adjust the width as needed */
+    height:180px; /* Adjust the height as needed */
+    border-radius: 40%; /* To make the image circular, assuming it's a portrait-style photo */
+    margin-right: 20px; /* To add some space between the image and header content */
+}
+.institution-logo {
+    max-height: 100px; /* Adjust the size of the logo as needed */
+
+    /* Add any other styles for the logo here */
+}
+/* Add more styles and customizations as needed */
