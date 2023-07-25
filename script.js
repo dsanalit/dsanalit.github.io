@@ -1,4 +1,4 @@
-// Sample data representing the list of publications with authors
+
 const publications = [
 {
     title: "Equilibria, Stability, and Sensitivity for the Aerial Suspended Beam Robotic System Subject to Parameter Uncertainty",
