@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Sanalitro, Ph.D.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+      <div class="container">
+                  <img src="picture.JPG" alt="Profile Picture" class="profile-picture">
+                  <img src="logo-sorbonne.svg" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+                  <img src="logo-isir.png" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+
+          <div class="header-content">
+              <h1>Dario Sanalitro, Ph.D.</h1>
+              <h2>Postdoctoral Researcher</h2>
+              <p>Sorbonne University, Paris</p>
+          </div>
+
+        <nav class="nav-buttons">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="news.html" class="nav-btn">News</a>
+            <a href="projects.html" class="nav-btn">Projects</a>
+            <a href="publications.html" class="nav-btn">Publications</a>
+            <a href="contacts.html" class="nav-btn">Contact</a>
+        </nav>
+
+      </div>
+  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Sanalitro, Ph.D.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+  <h2 class="section-title">Participation in Funded Research Projects</h2>
+
+  <div class="projects-grid" id="projectsContainer"></div>
+
+  <script>
+    const projectItems = [
+      {
+        date: "01/2024 – 08/2025",
+        title: "HOME4.0",
+        description: "Brain Signal Humanoid Integrated Home Assistant Platform, PRIN 2022 – CUP: E53D23000510006.",
+        link: "http://www.dees.unict.it/mbucolo/index.php/research",
+        image: "images/home.png"
+      },
+      {
+        date: "03/2023 – 08/2025",
+        title: "SAMOTHRACE",
+        description: "Sicilian Micro and Nano Technology Research and Innovation Center.",
+        link: "https://samothrace.eu",
+        image: "images/samothrace.png"
+      },
+      {
+        date: "10/2018 – 04/2022",
+        title: "Horizon 2020 Aerial Core",
+        description: "AERIAL COgnitive Integrated Multi-task Robotic System with Extended Operation Range and Safety (ID: 871479 AERIAL-CORE).",
+        link: "https://aerial-core.eu",
+        image: "images/core.jpg"
+      },
+      {
+        date: "10/2018 – 10/2022",
+        title: "Fly-crane",
+        description: "A multi-robot system for aerial transportation and manipulation, funded by Occitanie (Contract: 2018 003431 - ESR PREMAT-000160).",
+        link: "https://images.cnrs.fr/photo/20200084_0090",
+        image: "images/flycrane.jpg"
+      },
+      {
+        date: "10/2018 – 10/2021",
+        title: "MuRoPhen",
+        description: "Control of MUlti RObot Systems for Observing Dynamical PHENomena – funded by the French National Research Agency.",
+        link: "https://anr.fr/Project-ANR-17-CE33-0007",
+        image: "images/murophen.png"
+      }
+    ];
+
+    function insertProjects() {
+      const container = document.getElementById("projectsContainer");
+      container.innerHTML = "";
+      projectItems.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" class="project-image" onerror="this.src='https://via.placeholder.com/600x160?text=Project+Image';">
+          <div class="project-content">
+            <div class="project-date">${item.date}</div>
+            <div class="project-title">${item.title}</div>
+            <div class="project-description">${item.description}</div>
+            ${item.link ? `<a href="${item.link}" target="_blank" class="project-link">Learn more →</a>` : ""}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    window.addEventListener("load", insertProjects);
+  </script>
+
+</body>
