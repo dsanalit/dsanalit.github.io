@@ -6,9 +6,8 @@ const newsItems = [
   "image": "images/submission.jpeg",
   "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_cooperativeaerialmanipulation-msca-inria-activity-7342201503824121856-4bNP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
 },
-
 {
-  "date": "2025-09-30",
+  "date": "2025-07-09",
   "title": "Conclusion of the Inria MSCA Hosting & Training Programme",
   "description": "On July 10th, 2025, I completed Inria’s MSCA Postdoctoral Fellowships Hosting & Training Programme. Over several months I engaged in rigorous training in proposal writing, grant development, and participated in one-on-one review sessions with two European partnerships and innovation projects managers, Matthieu Py and Paolo Simonelli. This preparation will be instrumental for submitting my Marie Skłodowska-Curie proposal. The program also offered a unique opportunity to exchange ideas with colleagues and other highly competitive researchers from diverse disciplines, fostering collaboration and peer learning. ",
   "image": "images/inriatraining.jpg",
