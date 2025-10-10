@@ -379,3 +379,15 @@ body {
     .project-link:hover {
       text-decoration: underline;
     }
+  
+    .project-location {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.project-location i {
+  color: #d9534f; /* optional red map icon */
+}

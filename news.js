@@ -1,8 +1,24 @@
 const newsItems = [
+{
+  "date": "2025-09-10",
+  "title": "Marie Skłodowska-Curie Postdoctoral Fellowship Application",
+  "description": "On September 10th, I finally submitted my Marie Skłodowska-Curie Postdoctoral Fellowship proposal on Cooperative Aerial Manipulation. It has been an intense and rewarding journey — from shaping the scientific vision to refining the details of impact, training, and implementation. This proposal reflects months of research, collaboration, and mentoring, made possible through the invaluable support of Dr. Marco Tognon (Inria), Prof. Nikolay Atanasov (UC San Diego), Chloé Roscouet (Inria), and many supportive friends and colleagues. I’m deeply grateful for their guidance and encouragement throughout this process.",
+  "image": "images/submission.jpeg",
+  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_cooperativeaerialmanipulation-msca-inria-activity-7342201503824121856-4bNP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+},
+
+{
+  "date": "2025-09-30",
+  "title": "Conclusion of the Inria MSCA Hosting & Training Programme",
+  "description": "On July 10th, 2025, I completed Inria’s MSCA Postdoctoral Fellowships Hosting & Training Programme. Over several months I engaged in rigorous training in proposal writing, grant development, and participated in one-on-one review sessions with two European partnerships and innovation projects managers, Matthieu Py and Paolo Simonelli. This preparation will be instrumental for submitting my Marie Skłodowska-Curie proposal. The program also offered a unique opportunity to exchange ideas with colleagues and other highly competitive researchers from diverse disciplines, fostering collaboration and peer learning. ",
+  "image": "images/inriatraining.jpg",
+  "link": "https://www.inria.fr/en/marie-sklodowska-curie-actions-postdoctoral-fellowships-2025-inria-hosting-offers-training"
+},
+ 
   {
-    date: "2025-09-10",
+    date: "2025-06-10",
     title: "Just Flying? Aerial vehicles have bigger plans",
-    description: "Shaping the Marie Skłodowska-Curie proposal on Cooperative Aerial Mnaipulation under the INRIA Boost Mobility Program",
+    description: "Shaping the Marie Skłodowska-Curie proposal on Cooperative Aerial Manipulation under the INRIA Boost Mobility Program",
     image: "images/msca.jpeg",
     link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_cooperativeaerialmanipulation-msca-inria-activity-7342201503824121856-4bNP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
   },
