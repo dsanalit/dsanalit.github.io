@@ -190,23 +190,28 @@ nav ul li a {
 .news-card {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .news-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto; /* auto height keeps full image visible */
+  aspect-ratio: 16 / 9; /* ensures consistent layout */
+  object-fit: contain; /* prevents cropping */
+  background-color: #f7f7f7; /* adds neutral padding for smaller images */
 }
 
 .news-content {
+  flex-grow: 1;
   padding: 1rem 1.2rem;
 }
 
@@ -236,6 +241,25 @@ nav ul li a {
 
 .news-content a:hover {
   text-decoration: underline;
+}
+
+.news-card.preferred {
+  border: 2px solid #0073b1;
+  box-shadow: 0 4px 16px rgba(0, 115, 177, 0.15);
+  position: relative;
+}
+
+.news-card.preferred::before {
+  content: "⭐";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0073b1;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
 }
 
 
@@ -391,3 +415,61 @@ body {
 .project-location i {
   color: #d9534f; /* optional red map icon */
 }
+
+#Videos
+.multimedia {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.multimedia .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.multimedia h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.video-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-item p a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.youtube-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+iframe, video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-btn.active {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+

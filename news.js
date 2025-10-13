@@ -1,5 +1,20 @@
 const newsItems = [
 {
+  "date": "2025-10-11",
+  "title": "Exploring Human–Robot Interaction at Sorbonne Université, Paris",
+  "description": "After years of working with aerial robots, it is time for a new challenge on the ground. As part of the TREES (Transformative Robotics Ecosystem for Essential Services) project, I will work on floating base mobile robots, focusing on Human–Robot Interaction and will involve working with Mirokai (Enchanted Tools), an animalloid ballbot designed for smooth physical interaction with humans. I look forward to bringing my experience with aerial robotics to mobile platforms, where many of the fundamental challenges remain intriguingly similar. ",
+  "image": "images/dario-mirokai.png",
+  "link": "https://www.linkedin.com/feed/update/urn:li:activity:7382721134682710016/",
+  "preferred": true
+},
+{
+  "date": "2025-10-10",
+  "title": "Serving as Associate Editor for ICUAS 2026",
+  "description": "This year, I will be serving as an Associate Editor for the International Conference on Unmanned Aircraft Systems (ICUAS) 2026 which will be held at Corfu in Greece (June 15-18). It will be a pleasure to serve for this community which focuses on research and innovation for unmanned aerial vehicles.",
+  "image": "images/icuas.png",
+  "link": "https://uasconferences.com/2026_icuas/"
+},
+{
   "date": "2025-09-10",
   "title": "Marie Skłodowska-Curie Postdoctoral Fellowship Application",
   "description": "On September 10th, I finally submitted my Marie Skłodowska-Curie Postdoctoral Fellowship proposal on Cooperative Aerial Manipulation. It has been an intense and rewarding journey — from shaping the scientific vision to refining the details of impact, training, and implementation. This proposal reflects months of research, collaboration, and mentoring, made possible through the invaluable support of Dr. Marco Tognon (Inria), Prof. Nikolay Atanasov (UC San Diego), Chloé Roscouet (Inria), and many supportive friends and colleagues. I’m deeply grateful for their guidance and encouragement throughout this process.",
@@ -40,9 +55,16 @@ const newsItems = [
 function insertNews() {
   const container = document.getElementById("newsContainer");
   container.innerHTML = "";
-  newsItems.forEach(item => {
+
+  // 1. Sort preferred items first
+  const sortedNews = [...newsItems].sort((a, b) => (b.preferred === true) - (a.preferred === true));
+
+  // 2. Create cards
+  sortedNews.forEach(item => {
     const card = document.createElement("div");
     card.className = "news-card";
+    if (item.preferred) card.classList.add("preferred");
+
     card.innerHTML = `
       <img src="${item.image}" alt="${item.title}">
       <div class="news-content">
@@ -52,6 +74,7 @@ function insertNews() {
         <a href="${item.link}" target="_blank">Read more →</a>
       </div>
     `;
+
     container.appendChild(card);
   });
 }
