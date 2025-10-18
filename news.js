@@ -37,14 +37,21 @@ const newsItems = [
     link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_cooperativeaerialmanipulation-msca-inria-activity-7342201503824121856-4bNP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
   },
   {
-    date: "2025-08-01",
+    date: "2024-08-01",
     title: "New Preprint: Agile and Cooperative Aerial Manipulation",
     description: "Our latest preprint on cooperative aerial manipulation of cable-suspended loads is now available on arXiv.",
     image: "images/basket.png",
     link: "https://arxiv.org/abs/2501.18802"
   },
   {
-    date: "2025-02-10",
+  "date": "2024-09-01",
+  "title": "CASE 2024, Bari, Italy",
+  "description": "Quite a busy and inspiring conference! I had the pleasure to chair a special session with my friend and colleague Enrico Ferrentino on 'Innovations in Robotics and Automation for Enhanced Healthcare'. I was also invited as a speaker at the second 'French-Italian Workshop on Robotics 4.0' to present my work on Aerial Cooperative Manipulation, and presented our paper 'Visual Feedback BCI for UAV Control Using Error-Related Negativity', a collaboration with the University of California San Diego (UCSD). New friends, talented people, and an amazing atmosphere.",
+  "image": "images/case2024.jpeg",
+  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_chair-invited-speaker-activity-7244002132352245761-orG_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+  },
+  {
+    date: "2024-02-10",
     title: "Seminar — Advanced Aerial Cooperative Robotics at INRIA Rennes",
     description: "Delivered a seminar on cooperative aerial robotics",
     image: "images/rennes-talk.jpeg",
