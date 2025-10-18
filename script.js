@@ -4,13 +4,13 @@ const publications = [
     title: "Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load",
     authors: "Sihao Sun, Xuerui Wang, Dario Sanalitro, Antonio Franchi, Marco Tognon, Javier Alonso-Mora",
     link: "https://arxiv.org/abs/2501.18802",
-    journal: "Preprint (arXiv), 2025"
+    journal: "Accepted to Nature 2025"
  },
    {
     title: "A Single Subject Machine Learning Based Classification of Motor Imagery EEGs",
     authors: "Dario Sanalitro, Marco Finocchiaro, Pasquale Memmolo, Emanuela Cutuli, Maide Bucolo",
     link: "https://arxiv.org/abs/2508.21724",
-    journal: "Preprint (arXiv), 2025"
+    journal: "IEEE Research and Technologies for Society and Industry (RTSI) Conference 2025"
   },
 {
     title: "Equilibria, Stability, and Sensitivity for the Aerial Suspended Beam Robotic System Subject to Parameter Uncertainty",
@@ -28,7 +28,7 @@ const publications = [
   title: "Brain–Computer-Interface-Based Smart-Home Interface by Leveraging Motor Imagery Signals",
   authors: "Simona Cariello, Dario Sanalitro, Alessandro Micali, Arturo Buscarino, Maide Bucolo",
   link: "https://example.com/bci-paper",
-  journal: "MDPI, Inventions, 2023"
+  journal: "Inventions, 2023"
 },
 {
     title: "Precise Cable-Suspended Pick-and-Place with an Aerial Multi-robot System: A Proof of Concept for Novel Robotics-Based Construction Techniques",
@@ -88,22 +88,30 @@ const publications = [
 
 // Function to create and insert the list items for publications
 function insertPublications() {
-    const publicationList = document.getElementById("publicationList");
+    const journalList = document.getElementById("journalList");
+    const conferenceList = document.getElementById("conferenceList");
 
-    // Clear any existing content in the list
-    publicationList.innerHTML = "";
+    // Clear existing content
+    journalList.innerHTML = "";
+    conferenceList.innerHTML = "";
 
-    // Loop through the publications array and create list items
-    publications.forEach((publication) => {
+    publications.forEach((pub) => {
         const listItem = document.createElement("li");
         const titleLink = document.createElement("a");
-        titleLink.href = publication.link;
-        titleLink.textContent = publication.title;
+        titleLink.href = pub.link;
+        titleLink.textContent = pub.title;
         listItem.appendChild(titleLink);
-        listItem.innerHTML += `<br><strong>Authors:</strong> ${publication.authors}<br>${publication.journal}`;
-        publicationList.appendChild(listItem);
+        listItem.innerHTML += `<br><strong>Authors:</strong> ${pub.authors}<br>${pub.journal}`;
+
+        // Check if it’s a conference or journal
+        const lowerJournal = pub.journal.toLowerCase();
+        if (lowerJournal.includes("conference") || lowerJournal.includes("icuas") || lowerJournal.includes("iros")) {
+            conferenceList.appendChild(listItem);
+        } else {
+            journalList.appendChild(listItem);
+        }
     });
 }
 
-// Call the function to insert the publications on page load
+// Call on page load
 window.onload = insertPublications;

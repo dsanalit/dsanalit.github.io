@@ -23,10 +23,10 @@
       <nav class="nav-buttons">
         <a href="index.html" class="nav-btn">Home</a>
         <a href="news.html" class="nav-btn">News</a>
-        <a href="projects.html" class="nav-btn">Projects</a>
+        <a href="projects.html" class="nav-btn">Teaching & Projects</a>
         <a href="publications.html" class="nav-btn">Publications</a>
         <a href="multimedia.html" class="nav-btn active">Multimedia</a>
-        <a href="contacts.html" class="nav-btn">Contact</a>
+        <a href="contacts.html" class="nav-btn">Contacts</a>
       </nav>
 
       </div>
@@ -35,11 +35,55 @@
 
 <body>
 
+    <section id="teaching">
+  <h2 class="section-title">Teaching Activities</h2>
+    <div class="teaching-grid" id="teachingContainer"></div>
+  </section>
+
   <h2 class="section-title">Participation in Funded Research Projects</h2>
 
   <div class="projects-grid" id="projectsContainer"></div>
 
   <script>
+
+     // ---------- TEACHING ITEMS ----------
+    const teachingItems = [
+      {
+        year: "2023-2025",
+        title: "Biomedical Systems and Control",
+        institution: "University of Catania, Catania, Italy",
+        description: "Lectures and lab supervision on Machine Learning applied to Brain Computer Interfaces.",
+        link: "https://www.dieei.unict.it/courses/lm-25/course-units?seuid=5B67E838-EC97-4BD6-924C-ADEDA1399E4D"
+      },
+      {
+        year: "2023–2025",
+        title: "Control Theory",
+        institution: "University of Catania, Catania, Italy",
+        description: "Lectures and lab supervision on Basics of Control Theory",
+        link: "https://www.dieei.unict.it/corsi/l-9/insegnamenti?seuid=19AB435E-3C07-4B3A-BD13-C1E0F7071E80"
+      }
+    ];
+
+    function insertTeaching() {
+      const container = document.getElementById("teachingContainer");
+      container.innerHTML = "";
+
+      teachingItems.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "project-card"; // reuse same style for consistency
+        card.innerHTML = `
+          <div class="project-content">
+            <div class="project-date">${item.year}</div>
+            <div class="project-title">${item.title}</div>
+            <div class="project-location"><i class="fa fa-university"></i> ${item.institution}</div>
+            <div class="project-description">${item.description}</div>
+            ${item.link ? `<a href="${item.link}" target="_blank" class="project-link">Learn more →</a>` : ""}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
     const projectItems = [
     {
         date: "09/2025 – 09/2027",
@@ -113,7 +157,10 @@ function insertProjects() {
   });
     }
 
-    window.addEventListener("load", insertProjects);
+    window.addEventListener("load", () => {
+  insertTeaching();
+  insertProjects();
+});
   </script>
 
 </body>
