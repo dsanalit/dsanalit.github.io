@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia - Dario Sanalitro, Ph.D.</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    /* Extra page-specific styling */
+    .multimedia {
+      background: linear-gradient(135deg, #f9f9f9 0%, #eef2f3 100%);
+      padding: 60px 0;
+    }
+
+    .multimedia h2 {
+      text-align: center;
+      font-size: 2.3em;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding-bottom: 60px;
+    }
+
+/* Fix for video cropping inside Swiper slides */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  min-height: 420px;
+}
+
+.video-frame,
+.swiper-slide iframe,
+.swiper-slide video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  object-fit: contain;
+  background: black;
+}
+
+.video-caption {
+  margin-top: 15px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.swiper {
+  padding-bottom: 70px;
+}
+
+
+    .swiper-button-next, .swiper-button-prev {
+      color: #0073e6;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="picture.JPG" alt="Profile Picture" class="profile-picture">
+      <img src="logo-sorbonne.svg" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+      <img src="logo-isir.png" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+
+      <div class="header-content">
+        <h1>Dario Sanalitro, Ph.D.</h1>
+        <h2>Postdoctoral Researcher</h2>
+        <p>Sorbonne University, Paris</p>
+      </div>
+
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="news.html" class="nav-btn">News</a>
+        <a href="projects.html" class="nav-btn">Teaching & Projects</a>
+        <a href="publications.html" class="nav-btn">Publications</a>
+        <a href="multimedia.html" class="nav-btn active">Multimedia</a>
+        <a href="contacts.html" class="nav-btn">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Multimedia Section -->
+  <section class="multimedia">
+    <div class="container">
+      <h2>Multimedia Gallery</h2>
+
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Each Slide -->
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="videos/2021-JINT.mp4" title="Precise Cable-Suspended Pick-and-Place" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>Precise Cable-Suspended Pick-and-Place with an Aerial Multi-robot System</h3>
+              <a href="https://link.springer.com/article/10.1007/s10846-022-01668-3#article-info" target="_blank">📄 Paper Link</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/RCMMtGLcnXU" title="Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator (RA-L)</h3>
+              <a href="https://ieeexplore.ieee.org/document/9779498" target="_blank">📄 Paper Link</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/kKRCjknk9RI" title="ICRA 2023: Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>ICRA 2023: Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator</h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/3fQV2JNzZF0" title="Full-pose manipulation cable-suspended load multiple UAVs uncertainties" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>ICRA 2020: Full Pose Manipulation with a cable-suspended load with multiple aerial vehicles under uncertainties (RA-L)</h3>
+              <a href="https://ieeexplore.ieee.org/document/8972607" target="_blank">📄 Paper Link</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/O5JNRi_zrbQ" title="IROS 2024: Force-based Pose Regulation of a Cable-Suspended Load Using UAVs with Force Bias" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>IROS 2024: Force-based Pose Regulation of a Cable-Suspended Load Using UAVs with Force Bias. </h3>
+              <a href="https://ieeexplore.ieee.org/document/10342240" target="_blank">📄 Paper Link</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/eXyNLuB-mU4" title="Aerial Robotics Activities at LAAS-CNRS, Toulouse, France (2015-2019)" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>Aerial Robotics Activities at LAAS (2015–2019)</h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="videos/1-init-online-est.mp4" title="Inertial Estimation" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>Inertial Estimation and Energy-Efficient Control (ICUAS 2020)</h3>
+              <a href="https://ieeexplore.ieee.org/document/9213842" target="_blank">📄 Paper Link</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/s48Pphc0dtQ" title="Visual Feedback BCI" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>Visual Feedback BCI for UAV Control (CASE 2024)</h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe class="video-frame" src="videos/p2023a_bci.mp4" title="BCI Smart Home Interface" allowfullscreen></iframe>
+            <div class="video-caption">
+              <h3>BCI-based Smart Home Interface Using Motor Imagery Signals</h3>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dario Sanalitro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: true,
+      centeredSlides: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: { slidesPerView: 1.2 },
+        1024: { slidesPerView: 1.5 },
+      },
+    });
+  </script>
+</body>
+</html>

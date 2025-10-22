@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Sanalitro, Ph.D.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+      <div class="container">
+                  <img src="picture.JPG" alt="Profile Picture" class="profile-picture">
+                  <img src="logo-sorbonne.svg" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+                  <img src="logo-isir.png" alt="Institution Logo" class="institution-logo" style="background-color: white; padding: 5px; border-radius: 6px;">
+
+          <div class="header-content">
+              <h1>Dario Sanalitro, Ph.D.</h1>
+              <h2>Postdoctoral Researcher</h2>
+              <p>Sorbonne University, Paris</p>
+          </div>
+
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="news.html" class="nav-btn">News</a>
+        <a href="projects.html" class="nav-btn">Teaching & Projects</a>
+        <a href="publications.html" class="nav-btn">Publications</a>
+        <a href="multimedia.html" class="nav-btn active">Multimedia</a>
+        <a href="contacts.html" class="nav-btn">Contacts</a>
+      </nav>
+
+      </div>
+  </header>
+
+
+<body>
+
+    <section id="teaching">
+  <h2 class="section-title">Teaching Activities</h2>
+    <div class="teaching-grid" id="teachingContainer"></div>
+  </section>
+
+  <h2 class="section-title">Participation in Funded Research Projects</h2>
+
+  <div class="projects-grid" id="projectsContainer"></div>
+
+  <script>
+
+     // ---------- TEACHING ITEMS ----------
+    const teachingItems = [
+      {
+        year: "2023-2025",
+        title: "Biomedical Systems and Control",
+        institution: "University of Catania, Catania, Italy",
+        description: "Lectures and lab supervision on Machine Learning applied to Brain Computer Interfaces.",
+        link: "https://www.dieei.unict.it/courses/lm-25/course-units?seuid=5B67E838-EC97-4BD6-924C-ADEDA1399E4D"
+      },
+      {
+        year: "2023–2025",
+        title: "Control Theory",
+        institution: "University of Catania, Catania, Italy",
+        description: "Lectures and lab supervision on Basics of Control Theory",
+        link: "https://www.dieei.unict.it/corsi/l-9/insegnamenti?seuid=19AB435E-3C07-4B3A-BD13-C1E0F7071E80"
+      }
+    ];
+
+    function insertTeaching() {
+      const container = document.getElementById("teachingContainer");
+      container.innerHTML = "";
+
+      teachingItems.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "project-card"; // reuse same style for consistency
+        card.innerHTML = `
+          <div class="project-content">
+            <div class="project-date">${item.year}</div>
+            <div class="project-title">${item.title}</div>
+            <div class="project-location"><i class="fa fa-university"></i> ${item.institution}</div>
+            <div class="project-description">${item.description}</div>
+            ${item.link ? `<a href="${item.link}" target="_blank" class="project-link">Learn more →</a>` : ""}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    const projectItems = [
+    {
+        date: "09/2025 – 09/2027",
+        title: "TREES",
+        description: "Transformative Robotics Ecosystem for Essential Services",
+        link: "https://www.linkedin.com/posts/enchantedtools_robotics-ai-innovation-activity-7379096727875694592--gyl",
+        image: "images/trees.png",
+        location: "Sorbonne University, Paris, France"
+      },
+      {
+        date: "01/2024 – 08/2025",
+        title: "HOME4.0",
+        description: "Brain Signal Humanoid Integrated Home Assistant Platform ",
+        link: "http://www.dees.unict.it/mbucolo/index.php/research",
+        image: "images/home.png",
+        location: "University of Catania, Catania Italy"
+      },
+      {
+        date: "03/2023 – 08/2025",
+        title: "SAMOTHRACE",
+        description: "Sicilian Micro and Nano Technology Research and Innovation Center - University of Catania, Catania Italy",
+        link: "https://samothrace.eu",
+        image: "images/samothrace.png",
+        location: "University of Catania, Catania Italy"
+      },
+      {
+        date: "10/2018 – 04/2022",
+        title: "Horizon 2020 Aerial Core",
+        description: "AERIAL COgnitive Integrated Multi-task Robotic System with Extended Operation Range and Safety (ID: 871479 AERIAL-CORE)",
+        link: "https://aerial-core.eu",
+        image: "images/core.jpg",
+        location: "LAAS CNRS, Toulouse, France"
+      },
+      {
+        date: "10/2018 – 10/2022",
+        title: "Fly-crane",
+        description: "A multi-robot system for aerial transportation and manipulation, funded by Occitanie (Contract: 2018 003431 - ESR PREMAT-000160) - LAAS CNRS, Toulouse, France",
+        link: "https://images.cnrs.fr/photo/20200084_0090",
+        image: "images/flycrane.jpg",
+        location: "LAAS CNRS, Toulouse, France"
+      },
+      {
+        date: "10/2018 – 10/2021",
+        title: "MuRoPhen",
+        description: "Control of MUlti RObot Systems for Observing Dynamical PHENomena – funded by the French National Research Agency - LAAS CNRS, Toulouse, France",
+        link: "https://anr.fr/Project-ANR-17-CE33-0007",
+        image: "images/murophen.png",
+        location: "LAAS CNRS, Toulouse, France"
+      }
+    ];
+
+function insertProjects() {
+  const container = document.getElementById("projectsContainer");
+  container.innerHTML = "";
+
+  projectItems.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.title}" class="project-image" 
+        onerror="this.src='https://via.placeholder.com/600x160?text=Project+Image';">
+      <div class="project-content">
+        <div class="project-date">${item.date}</div>
+        <div class="project-title">${item.title}</div>
+        ${item.location ? `<div class="project-location"><i class="fa fa-map-marker-alt"></i> ${item.location}</div>` : ""}
+        <div class="project-description">${item.description}</div>
+        ${item.link ? `<a href="${item.link}" target="_blank" class="project-link">Learn more →</a>` : ""}
+      </div>
+    `;
+    container.appendChild(card);
+  });
+    }
+
+    window.addEventListener("load", () => {
+  insertTeaching();
+  insertProjects();
+});
+  </script>
+
+</body>

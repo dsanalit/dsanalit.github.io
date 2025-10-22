@@ -1,0 +1,475 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#hero {
+    background-image: url('background-image.jpg'); /* Add your hero background image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#about, #research, #publications, #contact {
+    padding: 2rem 0;
+}
+.profile-picture {
+    width: 100px; /* Adjust the width as needed */
+    height:120px; /* Adjust the height as needed */
+    border-radius: 20%; /* To make the image circular, assuming it's a portrait-style photo */
+    margin-right: 20px; /* To add some space between the image and header content */
+}
+
+.profile-picture {
+    width: 150px; /* Adjust the width as needed */
+    height:180px; /* Adjust the height as needed */
+    border-radius: 40%; /* To make the image circular, assuming it's a portrait-style photo */
+    margin-right: 20px; /* To add some space between the image and header content */
+}
+.institution-logo {
+    max-height: 100px; /* Adjust the size of the logo as needed */
+
+    /* Add any other styles for the logo here */
+}
+/* Add more styles and customizations as needed */
+
+.social {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social h2 {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Layout */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.institution-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    background-color: #004080; /* Sorbonne blue tone */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #0066cc;
+    transform: translateY(-2px);
+}
+
+/* Make sure header scales well on mobile */
+@media (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.news-section {
+  padding: 3rem 1.5rem;
+  background-color: #fafafa;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-card img {
+  width: 100%;
+  height: auto; /* auto height keeps full image visible */
+  aspect-ratio: 16 / 9; /* ensures consistent layout */
+  object-fit: contain; /* prevents cropping */
+  background-color: #f7f7f7; /* adds neutral padding for smaller images */
+}
+
+.news-content {
+  flex-grow: 1;
+  padding: 1rem 1.2rem;
+}
+
+.news-content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.news-content time {
+  font-size: 0.8rem;
+  color: #777;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.news-content a {
+  color: #0073b1; /* LinkedIn blue */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+.news-card.preferred {
+  border: 2px solid #0073b1;
+  box-shadow: 0 4px 16px rgba(0, 115, 177, 0.15);
+  position: relative;
+}
+
+.news-card.preferred::before {
+  content: "☆";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0073b1;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+}
+
+
+
+# Contacts
+/* Campus Gallery Section */
+.campus-gallery {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+# Projects
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h2.section-title {
+      color: #0073b1;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .project-image {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: block;
+  margin: 0 auto;
+    }
+
+    .project-content {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-date {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.8rem;
+      flex-grow: 1;
+    }
+
+    .project-link {
+      font-weight: 600;
+      color: #0073b1;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  
+    .project-location {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.project-location i {
+  color: #d9534f; /* optional red map icon */
+}
+
+#Videos
+.multimedia {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.multimedia .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.multimedia h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.video-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-item p a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.youtube-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+iframe, video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-btn.active {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
