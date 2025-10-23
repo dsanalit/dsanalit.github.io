@@ -78,6 +78,13 @@ const newsItems = [
     image: "images/rennes-talk.jpeg",
     link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_collaboration-multirobot-aerial-activity-7154715845703655424-4dg2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
   },
+{
+  date: "2022-04-08",
+  title: "PhD Defence: Aerial Cooperative Manipulation - Full Pose Manipulation in Air and in Interaction with the Environment",
+  description: "Defended my PhD thesis and had the honor of hosting a jury of exceptional quality: Jacques Gangloff (Univ. Strasbourg), Stéphane Caro (LS2N-CNRS), Juan Cortés (LAAS-CNRS), and Ivana Palunko (Univ. Dubrovnik).",
+  image: "images/phd-defence.jpeg",
+  link: "https://www.linkedin.com/posts/a-franchi_robotics-aerialrobotics-manipulation-activity-6923243541569667072-oAbc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+}
 ];
 
 function insertNews() {
