@@ -64,6 +64,16 @@ const newsItems = [
   "image": "images/case2024.jpeg",
   "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_chair-invited-speaker-activity-7244002132352245761-orG_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
   },
+  
+    {
+    date: "2024-01-17",
+    title: "Can objects be manipulated through aerial cooperative manipulation?",
+    description: "Delivered a seminar on cooperative aerial robotics at INRIA Rennes, presenting recent advances in multi-robot aerial cooperative manipulations. The visit was also an opportunity to strengthen and continue an ongoing international collaboration on cooperative aerial systems for agile manipulations.",
+    image: "images/rennes-talk.jpeg",
+    link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_collaboration-multirobot-aerial-activity-7154715845703655424-4dg2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+  },
+  
+  
   {
   "date": "2023-02-01",
   "title": "Joining UCSD's Swartz Center for Computational Neuroscience",
@@ -71,13 +81,7 @@ const newsItems = [
   "image": "images/ucsd.jpeg",
   "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_dream-california-sogno-activity-7162293905877667840-ht3b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
 },
-  {
-    date: "2024-01-17",
-    title: "Can objects be manipulated through aerial cooperative manipulation?",
-    description: "Delivered a seminar on cooperative aerial robotics at INRIA Rennes, presenting recent advances in multi-robot aerial cooperative manipulations. The visit was also an opportunity to strengthen and continue an ongoing international collaboration on cooperative aerial systems for agile manipulations.",
-    image: "images/rennes-talk.jpeg",
-    link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_collaboration-multirobot-aerial-activity-7154715845703655424-4dg2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
-  },
+
 {
   date: "2022-04-08",
   title: "PhD Defence: Aerial Cooperative Manipulation - Full Pose Manipulation in Air and in Interaction with the Environment",
