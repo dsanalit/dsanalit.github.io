@@ -64,7 +64,14 @@ const newsItems = [
   "image": "images/case2024.jpeg",
   "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_chair-invited-speaker-activity-7244002132352245761-orG_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
   },
-  
+ 
+   {
+  "date": "2024-02-01",
+  "title": "Joining UCSD's Swartz Center for Computational Neuroscience",
+  "description": "Visiting University of California San Diego's Swartz Center for Computational Neuroscience. Grateful for the warm welcome and excited for the journey ahead bringing neuroscience into robotic applications.",  
+  "image": "images/ucsd.jpeg",
+  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_dream-california-sogno-activity-7162293905877667840-ht3b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+}, 
     {
     date: "2024-01-17",
     title: "Can objects be manipulated through aerial cooperative manipulation?",
@@ -74,12 +81,13 @@ const newsItems = [
   },
   
   
-  {
-  "date": "2023-02-01",
-  "title": "Joining UCSD's Swartz Center for Computational Neuroscience",
-  "description": "Visiting University of California San Diego's Swartz Center for Computational Neuroscience. Grateful for the warm welcome and excited for the journey ahead bringing neuroscience into robotic applications.",  
-  "image": "images/ucsd.jpeg",
-  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_dream-california-sogno-activity-7162293905877667840-ht3b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
+
+{
+  "date": "2023-06-15",
+  "title": "My First Year as Assistant Professor at the University of Catania",
+  "description": "Wrapping up my first academic year as an Assistant Professor at the University of Catania. It’s been a rewarding journey teaching Biomedical Systems and Control to master’s students and Control Theory to undergraduates. Grateful to my students for their enthusiasm and curiosity — looking forward to many more semesters of learning and discovery together.",  
+  "image": "images/assprof.jpeg",
+  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_teacher-students-docente-activity-7081650014950744064-ynOH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
 },
 
 {
