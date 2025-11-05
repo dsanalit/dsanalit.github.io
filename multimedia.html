@@ -78,8 +78,9 @@
   </style>
 </head>
 
+
+
 <body>
-  <!-- Header -->
   <header>
     <div class="container">
       <img src="picture.JPG" alt="Profile Picture" class="profile-picture">
@@ -108,82 +109,19 @@
     <div class="container">
       <h2>Multimedia Gallery</h2>
 
-      <!-- Swiper Container -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+      <!-- Aerial Robotics Section -->
+      <h3 class="section-title">Aerial Robotics</h3>
+      <div class="swiper mySwiper" id="aerial-swiper">
+        <div class="swiper-wrapper" id="aerial-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-          <!-- Each Slide -->
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="videos/2021-JINT.mp4" title="Precise Cable-Suspended Pick-and-Place" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>Precise Cable-Suspended Pick-and-Place with an Aerial Multi-robot System</h3>
-              <a href="https://link.springer.com/article/10.1007/s10846-022-01668-3#article-info" target="_blank">📄 Paper Link</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/RCMMtGLcnXU" title="Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator (RA-L)</h3>
-              <a href="https://ieeexplore.ieee.org/document/9779498" target="_blank">📄 Paper Link</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/kKRCjknk9RI" title="ICRA 2023: Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>ICRA 2023: Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator</h3>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/3fQV2JNzZF0" title="Full-pose manipulation cable-suspended load multiple UAVs uncertainties" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>ICRA 2020: Full Pose Manipulation with a cable-suspended load with multiple aerial vehicles under uncertainties (RA-L)</h3>
-              <a href="https://ieeexplore.ieee.org/document/8972607" target="_blank">📄 Paper Link</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/O5JNRi_zrbQ" title="IROS 2024: Force-based Pose Regulation of a Cable-Suspended Load Using UAVs with Force Bias" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>IROS 2024: Force-based Pose Regulation of a Cable-Suspended Load Using UAVs with Force Bias. </h3>
-              <a href="https://ieeexplore.ieee.org/document/10342240" target="_blank">📄 Paper Link</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/eXyNLuB-mU4" title="Aerial Robotics Activities at LAAS-CNRS, Toulouse, France (2015-2019)" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>Aerial Robotics Activities at LAAS (2015–2019)</h3>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="videos/1-init-online-est.mp4" title="Inertial Estimation" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>Inertial Estimation and Energy-Efficient Control (ICUAS 2020)</h3>
-              <a href="https://ieeexplore.ieee.org/document/9213842" target="_blank">📄 Paper Link</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="https://www.youtube.com/embed/s48Pphc0dtQ" title="Visual Feedback BCI" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>Visual Feedback BCI for UAV Control (CASE 2024)</h3>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <iframe class="video-frame" src="videos/p2023a_bci.mp4" title="BCI Smart Home Interface" allowfullscreen></iframe>
-            <div class="video-caption">
-              <h3>BCI-based Smart Home Interface Using Motor Imagery Signals</h3>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Swiper Navigation -->
+      <!-- Brain-Computer Interfaces Section -->
+      <h3 class="section-title">Brain–Computer Interfaces</h3>
+      <div class="swiper mySwiper" id="bci-swiper">
+        <div class="swiper-wrapper" id="bci-wrapper"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
@@ -191,40 +129,193 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Dario Sanalitro. All rights reserved.</p>
     </div>
   </footer>
 
+
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script>
-    const swiper = new Swiper('.mySwiper', {
-      slidesPerView: 1,
-      spaceBetween: 40,
-      loop: true,
-      centeredSlides: true,
-      grabCursor: true,
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        768: { slidesPerView: 1.2 },
-        1024: { slidesPerView: 1.5 },
-      },
-    });
-  </script>
+const videos = [
+  // === Aerial Robotics ===
+  {
+    "category": "aerial",
+    "title": "Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load",
+    "venue": "2025, Science Robotics",
+    "abstract": "The world fastest team of UAVs can control full pose of the payload in an agile way.",
+    "link": "https://www.science.org/doi/10.1126/scirobotics.adu8015",
+    "video": "http://www.youtube.com/watch?v=FBWN-rTK1YU",
+    "type": "youtube"
+  },
+  {
+    "category": "aerial",
+    "title": "Equilibria, Stability, Sensitivity: Aerial Suspended Beam Robotic System under Param Uncertainty",
+    "venue": "2023, IEEE Transactions on Robotics",
+    "abstract": "A study on how parametric uncertainties affect the cooperative manipulation of a cable-suspended beam-shaped load by means of two aerial robots not explicitly communicating with each other.",
+    "link": "https://ieeexplore.ieee.org/document/10149811/",
+    "video": "https://www.youtube.com/watch?v=cqAUtY-qCx4&list=PLvnaMrLsQ5skLTIMAMSxHYA_1ynI6WPdD",
+    "type": "youtube"
+  },
+  {
+    "category": "aerial",
+    "title": "Force-based Pose Regulation of a Cable-Suspended Load Using UAVs with Force Bias",
+    "venue": "2024, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "abstract": "Novel force-based pose regulation approach leveraging biased force allocation",
+    "link": "https://ieeexplore.ieee.org/document/10342240",
+    "video": "https://www.youtube.com/watch?v=O5JNRi_zrbQ",
+    "type": "youtube"
+  },
+  {
+    "category": "aerial",
+    "title": "Indirect Force Control of a Cable-Suspended Aerial Multi-Robot Manipulator",
+    "venue": "2022, IEEE Robotics and Automation Letters (RA-L)",
+    "abstract": "We propose an indirect force control strategy...",
+    "link": "https://ieeexplore.ieee.org/document/9779498",
+    "video": "https://www.youtube.com/watch?v=RCMMtGLcnXU",
+    "type": "youtube"
+  },
+  {
+    "category": "aerial",
+    "title": "Precise Cable-Suspended Pick-and-Place with an Aerial Multi-robot System",
+    "venue": "2021, Journal of Intelligent & Robotic Systems (JINT)",
+    "abstract": "Pick and Place operations are possible with Aerial Multi-Robot Manipulators. ",
+    "link": "https://link.springer.com/article/10.1007/s10846-022-01668-3#article-info",
+    "video": "videos/2021-JINT.mp4",
+    "type": "local"
+  },
+  {
+    "category": "aerial",
+    "title": "Full Pose Manipulation with a Cable-Suspended Load Using Multiple UAVs",
+    "venue": "2020, IEEE International Conference on Robotics and Automation (ICRA)",
+    "abstract": "Control framework for full 6-DOF manipulation of a cable-suspended load with multi-robot systems under Uncertanties",
+    "link": "https://ieeexplore.ieee.org/document/8972607",
+    "video": "https://www.youtube.com/watch?v=3fQV2JNzZF0",
+    "type": "youtube"
+  },
+  {
+    "category": "aerial",
+    "title": "Inertial Estimation and Energy-Efficient Control",
+    "venue": "2020, International Conference on Unmanned Aircraft Systems (ICUAS)",
+    "abstract": "Demonstration of inertial estimation and energy-efficient control strategies for UAVs.",
+    "link": "https://ieeexplore.ieee.org/document/9213842",
+    "video": "videos/1-init-online-est.mp4",
+    "type": "local"
+  },
+  {
+    "category": "aerial",
+    "title": "Aerial Robotics Activities at LAAS (2015–2019)",
+    "venue": "2019, LAAS-CNRS",
+    "abstract": "Overview of aerial robotics research activities at LAAS-CNRS, Toulouse.",
+    "link": "",
+    "video": "https://www.youtube.com/watch?v=eXyNLuB-mU4",
+    "type": "youtube"
+  },
+
+  // === BCI ===
+  {
+    "category": "bci",
+    "title": "Visual Feedback BCI for UAV Control",
+    "venue": "2024, International Conference on Automation Science and Engineering (CASE)",
+    "abstract": "Development of a visual-feedback brain-computer interface enabling precise UAV control...",
+    "video": "https://www.youtube.com/embed/s48Pphc0dtQ",
+    "type": "youtube"
+  },
+  {
+    "category": "bci",
+    "title": "BCI-based Smart Home Interface Using Motor Imagery Signals",
+    "venue": "2023, Inventions",
+    "abstract": "Brain-Computer Interface for smart home devices using motor imagery signals.",
+    "video": "videos/p2023a_bci.mp4",
+    "type": "local"
+  }
+];
+
+function createSlide(video) {
+  const slide = document.createElement('div');
+  slide.classList.add('swiper-slide');
+  let videoHTML = '';
+
+  if (video.type === 'youtube') {
+    // Ensure we convert any YouTube URL to embed format (with nocookie)
+    let videoId = '';
+    try {
+      const url = new URL(video.video);
+      // Extract v parameter if URL is like watch?v=...
+      if (url.hostname.includes('youtube.com')) {
+        videoId = url.searchParams.get('v');
+      } else if (url.hostname.includes('youtu.be')) {
+        videoId = url.pathname.slice(1);
+      }
+    } catch (e) {
+      console.warn('Invalid YouTube URL:', video.video);
+    }
+
+    if (videoId) {
+      videoHTML = `<iframe class="video-frame" 
+                          src="https://www.youtube-nocookie.com/embed/${videoId}" 
+                          title="${video.title}" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen 
+                          loading="lazy">
+                   </iframe>`;
+    } else {
+      videoHTML = `<p>Invalid YouTube link</p>`;
+    }
+
+  } else {
+    videoHTML = `<video class="video-frame" controls>
+                   <source src="${video.video}" type="video/mp4">
+                   Your browser does not support the video tag.
+                 </video>`;
+  }
+
+  slide.innerHTML = `
+    ${videoHTML}
+    <div class="video-info">
+      <h3>${video.title}</h3>
+      ${video.venue ? `<p><em>${video.venue}</em></p>` : ''}
+      <p>${video.abstract}</p>
+      ${video.link ? `<a class="video-link" href="${video.link}" target="_blank">📄 Read Paper</a>` : ''}
+    </div>`;
+
+  return slide;
+}
+
+
+function initSwiper(selector) {
+  new Swiper(selector, {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    loop: true,
+    centeredSlides: true,
+    grabCursor: true,
+    autoplay: { delay: 6000, disableOnInteraction: false },
+    pagination: { el: `${selector} .swiper-pagination`, clickable: true },
+    navigation: { nextEl: `${selector} .swiper-button-next`, prevEl: `${selector} .swiper-button-prev` },
+    breakpoints: { 768: { slidesPerView: 1.2 }, 1024: { slidesPerView: 1.5 } }
+  });
+}
+
+function loadMultimedia() {
+  const aerialWrapper = document.getElementById('aerial-wrapper');
+  const bciWrapper = document.getElementById('bci-wrapper');
+
+  videos.forEach(video => {
+    const slide = createSlide(video);
+    if (video.category === 'aerial') aerialWrapper.appendChild(slide);
+    else if (video.category === 'bci') bciWrapper.appendChild(slide);
+  });
+
+  initSwiper('#aerial-swiper');
+  initSwiper('#bci-swiper');
+}
+
+window.addEventListener('DOMContentLoaded', loadMultimedia);
+</script>
+
 </body>
 </html>

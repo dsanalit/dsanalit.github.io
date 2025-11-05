@@ -3,8 +3,8 @@ const publications = [
 {
     title: "Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load",
     authors: "Sihao Sun, Xuerui Wang, Dario Sanalitro, Antonio Franchi, Marco Tognon, Javier Alonso-Mora",
-    link: "https://arxiv.org/abs/2501.18802",
-    journal: "Accepted to Nature 2025"
+    link: "https://www.science.org/doi/abs/10.1126/scirobotics.adu8015",
+    journal: "Science Robotics, 2025"
  },
    {
     title: "A Single Subject Machine Learning Based Classification of Motor Imagery EEGs",

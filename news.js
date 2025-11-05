@@ -1,10 +1,27 @@
 const newsItems = [
+
 {
   "date": "2025-10-11",
   "title": "Exploring Human–Robot Interaction at Sorbonne Université, Paris",
   "description": "After years of working with aerial robots, it is time for a new challenge on the ground. As part of the TREES (Transformative Robotics Ecosystem for Essential Services) project, I will work on floating base mobile robots, focusing on Human–Robot Interaction and will involve working with Mirokai (Enchanted Tools), an animalloid ballbot designed for smooth physical interaction with humans. I look forward to bringing my experience with aerial robotics to mobile platforms, where many of the fundamental challenges remain intriguingly similar. ",
   "image": "images/dario-mirokai.png",
   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7382721134682710016/",
+  "preferred": true
+},
+{
+  "date": "2025-10-30",
+  "title": " Agile and Cooperative Aerial Manipulation of a Cable-suspended Load published in Science Robotics",
+  "description": "  A model-based centralized algorithm to coordinate multiple quadrotors to control the position and orientation of a cable-suspended load. (No learning, no data-driven).  Main breakthroughs are: higher acceleration (>8 times) of the load compared with SOTA, high agility obstacle avoidance avoiding internal collisions, obustness against load inertia model mismatch, any sensor neeeded to the load to measure its pose. ",
+  "image": "images/basket.png",
+  "link": "https://www.linkedin.com/posts/sihao-sun-0ab867a7_multiagentcontrol-aerialmanipulation-uavs-activity-7389550295623553024-pnX0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM",
+  "preferred": true
+},
+{
+  "date": "2025-10-30",
+  "title": "Robust Aerial Suspended Beam Control published in Transaction on Robotics",
+  "description": "A study on how  parametric uncertainties affect the cooperative manipulation of a cable-suspended beam-shaped load by means of two aerial robots not explicitly communicating with each other.",
+  "image": "images/t-ro.jpg",
+  "link": "https://www.linkedin.com/posts/chiara-gabellieri-a9b686152_equilibria-stability-sensitivity-aerial-activity-7087006551105794049-SdGy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM",
   "preferred": true
 },
 {
@@ -49,13 +66,6 @@ const newsItems = [
     description: "Shaping the Marie Skłodowska-Curie proposal on Cooperative Aerial Manipulation under the INRIA Boost Mobility Program",
     image: "images/msca.jpeg",
     link: "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_cooperativeaerialmanipulation-msca-inria-activity-7342201503824121856-4bNP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
-  },
-  {
-    date: "2025-01-30",
-    title: "New Preprint: Agile and Cooperative Aerial Manipulation",
-    description: "Our latest preprint on cooperative aerial manipulation of cable-suspended loads is now available on arXiv.",
-    image: "images/basket.png",
-    link: "https://arxiv.org/abs/2501.18802"
   },
   {
   "date": "2024-09-01",
