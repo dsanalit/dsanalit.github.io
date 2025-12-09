@@ -44,6 +44,14 @@
 
   <div class="projects-grid" id="projectsContainer"></div>
 
+  <!-- Supervised Students -->
+  <section id="supervised-students">
+    <h2 class="section-title">Supervised Students</h2>
+
+    <div id="studentsList"></div>
+  </section>
+
+
   <script>
 
      // ---------- TEACHING ITEMS ----------
@@ -128,7 +136,7 @@
       {
         date: "10/2018 – 10/2021",
         title: "MuRoPhen",
-        description: "Control of MUlti RObot Systems for Observing Dynamical PHENomena – funded by the French National Research Agency - LAAS CNRS, Toulouse, France",
+        description: "Control of MUlti RObot Systems for Observing Dynamical PHENomena, funded by the French National Research Agency - LAAS CNRS, Toulouse, France",
         link: "https://anr.fr/Project-ANR-17-CE33-0007",
         image: "images/murophen.png",
         location: "LAAS CNRS, Toulouse, France"
@@ -157,9 +165,65 @@ function insertProjects() {
   });
     }
 
+  // ---------- SUPERVISED STUDENTS ----------
+      const supervisedStudents = {
+      postdoc: [
+        { name: "Yassine El Houm", topic: "Aerial Robotics for Brain Computer Interfaces", period: "2023-2024", institution: "University of Catania, Catania, Italy" }
+      ],
+      phd: [
+        { name: "Emanuela Cutuli", topic: "Control of Micorfluidic Processes", period: "2023-2024", institution: "University of Catania, Catania, Italy" },
+        { name: "Sameule Moscato", topic: "Image Processing for Microfluidic Processes", period: "2023-2024", institution: "University of Catania, Catania, Italy" }
+      ],
+      masters: [
+        { name: "Francesco Russo", topic: "Aerial Vehicles Control", period: "2024-2025", institution: "University of Catania, Catania/La Sapienza Roma, Italy" },
+        { name: "Marco Finocchiaro", topic: "Machine Learning for Brain Actuated Control", period: "2023-2024", institution: "University of Catania, Catania, Italy" },
+        { name: "Gregorio Amato", topic: "BCI-Driven Drone Control System: from simulation to real-world deployment", period: "2023-2024", institution: "Padua University, Padua/University of Catania, Catania, Italy" },
+        { name: "Carla Finocchiaro", topic: "Real-time processing and Feature Extraction for Brain Actuated Control", period: "2023-2024", institution: "University of Catania, Catania, Italy" },
+        { name: "Luca Reale", topic: "Real-time processing and Feature Classification for Brain Actuated Control", period: "2023-2024", institution: "University of Catania, Catania, Italy" },
+        { name: "Vito Romanello", topic: "Signal Processing for Brain Actuated Control", period: "2022-2023", institution: "University of Catania, Catania, Italy"},
+        { name: "Matilda Saladdino", topic: "Independent Component Analysis for Brain Actuated Control", period: "2022-2023", institution: "University of Catania, Catania, Italy"},
+        { name: "Emanuele Barone", topic: "System Identification in Microfluidic Processes", period: "2022-2023", institution: "University of Catania, Catania, Italy"},
+        //{ name: "Maxime Lemerle", topic: "Fully Actuated Aerial Vehicles Control", period: "2020-2021", institution: "LAAS-CNRS, Toulouse, France"},
+        { name: "Baljinder Singh Bal ", topic: "Heterogeneous Multi-Robot Control", period: "2019-2020", institution: "LAAS-CNRS, Toulouse, France"},
+      ],
+      bachelors: [
+        { name: "Antonino Conticello", topic: "Under-actuated Aerial Vehicles Control", period: "2022–2023", institution: "LAAS-CNRS Toulouse, France" },
+        { name: "Maxime Lemerle", topic: "Fully Actuated Aerial Vehicles Control", period: "2021–2022", institution: "LAAS-CNRS Toulouse, France" },
+      ]
+    };
+
+      function insertStudents() {
+    const container = document.getElementById("studentsList");
+    container.innerHTML = "";
+
+    const createList = (title, list) => {
+      if (list.length === 0) return "";
+      let html = `<div class="student-category">
+                    <h3 class="student-heading">${title}</h3>
+                    <ul class="student-list">`;
+      list.forEach(s => {
+        html += `
+          <li class="student-item">
+            <span class="student-name">${s.name}</span> 
+            <span class="student-topic">– <em>${s.topic}</em></span></em>
+            <span class="student-meta">${s.period} · ${s.institution}</span>
+          </li>
+        `;
+      });
+      html += "</ul></div>";
+      return html;
+    };
+
+    container.innerHTML += createList("Postdoctoral Researchers", supervisedStudents.postdoc);
+    container.innerHTML += createList("PhD Students", supervisedStudents.phd);
+    container.innerHTML += createList("Master’s Students", supervisedStudents.masters);
+    container.innerHTML += createList("Bachelor’s Students", supervisedStudents.bachelors);
+  }
+
     window.addEventListener("load", () => {
   insertTeaching();
   insertProjects();
+  insertStudents();
 });
   </script>
 
