@@ -9,7 +9,7 @@ const publications = [
    {
     title: "A Single Subject Machine Learning Based Classification of Motor Imagery EEGs",
     authors: "Dario Sanalitro, Marco Finocchiaro, Pasquale Memmolo, Emanuela Cutuli, Maide Bucolo",
-    link: "https://arxiv.org/abs/2508.21724",
+    link: "https://ieeexplore.ieee.org/document/11212609",
     journal: "IEEE Research and Technologies for Society and Industry (RTSI) Conference 2025"
   },
 {
