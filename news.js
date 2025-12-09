@@ -17,12 +17,19 @@ const newsItems = [
   "preferred": true
 },
 {
-  "date": "2025-10-30",
+  "date": "2023-12-14",
   "title": "Robust Aerial Suspended Beam Control published in Transaction on Robotics",
   "description": "A study on how  parametric uncertainties affect the cooperative manipulation of a cable-suspended beam-shaped load by means of two aerial robots not explicitly communicating with each other.",
   "image": "images/t-ro.jpg",
   "link": "https://www.linkedin.com/posts/chiara-gabellieri-a9b686152_equilibria-stability-sensitivity-aerial-activity-7087006551105794049-SdGy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM",
   "preferred": true
+},
+{
+  "date": "2025-11-28",
+  "title": "La Sicilia - Interview & Front Page Feature",
+  "description": "A small personal milestone I’m happy to share: La Sicilia featured me on its front page and dedicated a full interview, written by Giovanni Finocchiaro (to whom I am grateful). It covers our latest studies on Aerial Cooperative Manipulations, a project we have been developing for years.",
+  "image": "images/la_sicilia.jpeg",
+  "link": "https://www.linkedin.com/posts/dario-sanalitro-42a9b4151_a-small-personal-milestone-im-happy-to-share-activity-7400837548685557760-DXDj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSiFGIB5mLI0mpfQFw5RKL5OFakhyC1UaM"
 },
 {
   "date": "2025-10-15",
@@ -47,7 +54,7 @@ const newsItems = [
 },
 {
   "date": "2025-08-24",
-  "title": "IEEE RTSI 2025 — Presented Paper",
+  "title": "Paper Presentation at IEEE RTSI 2025",
   "description": "Presented our paper “A Single-Subject Machine Learning Based Classification of Motor Imagery EEGs” at IEEE Research and Technologies for Society and Industry 2025. This work, carried out in collaboration with the Istituto di Scienze Applicate e Sistemi Intelligenti \"E. Caianiello\" (CNR), explores how machine learning can be used to classify motor actions from human EEG signals - a step toward applying human motor intent recognition to the control of aerial robots.",
   "image": "images/rtsi.jpg",
   "link": "https://2025.ieee-rtsi.org/"
