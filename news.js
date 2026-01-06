@@ -25,6 +25,13 @@ const newsItems = [
   "preferred": true
 },
 {
+  "date": "2026-01-06",
+  "title": "Les Docteurs ont la parole – Personal Testimony",
+  "description": "My testimony on the blog “Les Docteurs ont la parole.” My sincere thanks to President Alain Bamberger for this opportunity and for highlighting researchers and their journeys.",
+  "image": "images/logo-docteurs.png",
+  "link": "https://www.docteurs-spi.org/post/des-drones-qui-transportent-des-charges-la-r%C3%A9volution-qui-vient-du-sud-de-la-france-et-du-laas"
+},
+{
   "date": "2025-11-28",
   "title": "La Sicilia - Interview & Front Page Feature",
   "description": "A small personal milestone I’m happy to share: La Sicilia featured me on its front page and dedicated a full interview, written by Giovanni Finocchiaro (to whom I am grateful). It covers our latest studies on Aerial Cooperative Manipulations, a project we have been developing for years.",
