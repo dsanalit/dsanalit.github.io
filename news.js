@@ -25,6 +25,13 @@ const newsItems = [
   "preferred": true
 },
 {
+  "date": "2026-01-13",
+  "title": "Invited Seminar at ISIR - Aerial Cooperative Manipulation",
+  "description": "Invited seminar at ISIR where I presented my previous work on aerial cooperative manipulation and discussed how it connects with the research I have been conducting at ISIR over the past five months. It always feels good to share our work and engage with fellow researchers.",
+  "image": "images/isir-seminar.jpg",
+  "link": "#"
+},
+{
   "date": "2026-01-06",
   "title": "Les Docteurs ont la parole – Personal Testimony",
   "description": "My testimony on the blog “Les Docteurs ont la parole.” My sincere thanks to President Alain Bamberger for this opportunity and for highlighting researchers and their journeys.",
