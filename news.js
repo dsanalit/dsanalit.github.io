@@ -25,6 +25,13 @@ const newsItems = [
   "preferred": true
 },
 {
+"date": "2026-02-20",
+"title": "Received the MSCA Seal of Excellence",
+"description": "Following evaluation by an international panel of independent experts, my project proposal under the MSCA program was recognised as a high-quality proposal in a highly competitive evaluation process. Although it could not receive funding due to budgetary constraints, it has been awarded the European Commission Seal of Excellence and is recommended for funding through other sources.",
+"image": "images/seal.png",
+"link": "https://www.linkedin.com/feed/update/urn:li:activity:7430183482951151616/"
+},
+{
   "date": "2026-01-13",
   "title": "Invited Seminar at ISIR - Aerial Cooperative Manipulation",
   "description": "Invited seminar at ISIR where I presented my previous work on aerial cooperative manipulation and discussed how it connects with the research I have been conducting at ISIR over the past five months. It always feels good to share our work and engage with fellow researchers.",
